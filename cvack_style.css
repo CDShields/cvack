@@ -1,0 +1,138 @@
+html {
+  font-family: 'Questrial', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 14px;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+    height: 1px;
+    color: black;
+    background-color: black;
+    border: 0px;
+    margin-bottom: 40px;
+}
+
+#headerWrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#contentWrap {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 125px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+#content {
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+}
+
+#splash {
+  background-image: url(kayak_pic_rv.jpg);
+  width: 960px;
+  height: 336px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 125px;
+  background: white;
+  width: 960px;
+}
+
+#logo {
+  max-width: 200px;
+}
+
+#splash {
+  max-width: 960px;
+}
+
+#nav {
+  float: right;
+  margin-top: 0px;
+}
+#connect {
+  float: right;
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#footer {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+#navInner {
+  float: right;
+  clear: right;
+}
+#nav ul {
+  list-style-type: none;
+}
+#nav li {
+  display: inline;
+}
+
+#nav li {
+  border: solid 2px red;
+  color: red;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.row {
+  padding-top: 5px;
+  margin-top: 5px;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.col3 {
+  float: left;
+  width: 30.3%;
+  margin-right: 3%;
+  height: auto;
+  text-align: justify;
+}
+.row > .col3:last-child {
+  width: 33.3%;
+  margin-right: 0%;
+}
