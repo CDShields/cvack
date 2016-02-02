@@ -36,37 +36,7 @@
     <div id="contentWrap">
 
       <!--CONTENT-->
-      <div id="content">
-        <div id="dummies" class="book_product">
-          <div class="name"></div>
-          <div class="category"></div>
-          <div class="price"></div>
-          <div class="picture"></div>
-          <div class="details"></div>
-        </div>
-        <div id="riverpics" class="book_product">
-          <div class="name"></div>
-          <div class="category"></div>
-          <div class="price"></div>
-          <div class="picture"></div>
-          <div class="details"></div>
-        </div>
-        <div id="paddle" class="accessories">
-          <div class="name"></div>
-          <div class="category"></div>
-          <div class="price"></div>
-          <div class="picture"></div>
-          <div class="details"></div>
-        </div>
-        <div id="dry_bag" class="accessories">
-          <div class="name"></div>
-          <div class="category"></div>
-          <div class="price"></div>
-          <div class="picture"></div>
-          <div class="details"></div>
-        </div>
-
-      </div>
+      <div id="content"></div>
 
       <!--FOOTER--------------------------------------------------------------->
       <div id="footer">
@@ -81,7 +51,8 @@
     <script src="store.js"></script>
     <script>
       var dummies = {
-        divname: "#dummies",
+        divname: "dummies",
+        divclass: "book_product",
         name: "Kayaking for Dummies",
         category: "Category: How-To",
         price: 29.99,
@@ -89,7 +60,8 @@
         details: ["This comprehensive guide is a must-have for any newcomer to the world of kayaking.", "From choosing the right vessel to embarking on your first adventure - this book will cover it all."]
       };
       var riverpics = {
-        divname: "#riverpics",
+        divname: "riverpics",
+        divclass: "book_product",
         name: "Photographic Guide to Central Virginia's Waterways",
         category: "Category: Photography",
         price: 49.99,
@@ -97,7 +69,8 @@
         details: ["This book is a collection of beautiful photographs taken by various amateur and professional photographers around the Central Virginia area.", "Gives the reader a variety of perspectives on the area's waterways."]
       };
       var paddle = {
-        divname: "#paddle",
+        divname: "paddle",
+        divclass: "accessories",
         name: "Kayak Paddle",
         category: "Category: Paddles",
         price: 149.99,
@@ -105,7 +78,8 @@
         details: ["The Paddly paddle from Acme offers beginning and recreational paddlers excellent value and performance.","A must have for your kayaking starter-kit."]
       };
       var dry_bag = {
-        divname: "#dry_bag",
+        divname: "dry_bag",
+        divclass: "accessories",
         name: "Dry Bag",
         category: "Category: Gear Bags",
         price: 159.99,
@@ -114,12 +88,25 @@
       };
 
       function add_to_page (item) {
-        $(item.divname + ' .name').text(item.name);
-        $(item.divname + ' .category').text(item.category);
-        $(item.divname + ' .price').text(item.price);
-        $(item.divname + ' .picture').html('<img src="' + item.picture + '"/>');
-        $(item.divname + ' .details').text(item.details);
+        $('#content').append(
+          $('<div id='+item.divname+' class='+item.divclass+'>').append( $('<div class=name>').text(item.name),
+          $('<div class=category>').text(item.category),
+          $('<div class=price>').text(item.price),
+          $('<div class=picture>').html('<img src='+item.picture+'>'),
+          $('<div class=details>').text(item.details)));
+
+
+
+
+
+        //$(item.divname + ' .category').text(item.category);
+        //$(item.divname + ' .price').text(item.price);
+        //$(item.divname + ' .picture').html('<img src="' + item.picture + '"/>');
+        //$(item.divname + ' .details').text(item.details);
       }
+
+      // $('#content').append($('<div id=book1>').html( $('<div class=name>').text(book1.name)))
+
 
       add_to_page(dummies);
       add_to_page(riverpics);
