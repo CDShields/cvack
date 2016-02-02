@@ -26,6 +26,7 @@
             <a href="index.html"><li>Blog</li></a>
             <li id="navBooks">Books</li>
             <li id="navAccessories">Accessories</li>
+            <li id="showAll">Show All</li>
           </ul>
         </div>
         </div>
@@ -118,8 +119,16 @@
         add_to_page(paddle);
         add_to_page(dry_bag);
       }
+      function showAll () {
+        $('#content').empty();
+        add_to_page(dummies);
+        add_to_page(riverpics);
+        add_to_page(paddle);
+        add_to_page(dry_bag);
+      }
       document.querySelector('#navBooks').addEventListener('click',bookInit);
       document.querySelector('#navAccessories').addEventListener('click',accessInit);
+      document.querySelector('#showAll').addEventListener('click',showAll);
 
     </script>
 
