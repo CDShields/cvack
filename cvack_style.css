@@ -118,6 +118,30 @@ hr {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.category {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.price {
+
+}
+
+.picture {
+
+}
+
+.details {
+
+}
+
+
 .row {
   padding-top: 5px;
   margin-top: 5px;
