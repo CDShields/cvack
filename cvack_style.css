@@ -41,7 +41,7 @@ hr {
   width: 960px;
   margin: 0 auto;
   margin-top: 125px;
-  padding-top: 20px;
+  padding-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -69,6 +69,7 @@ hr {
   height: 125px;
   background: white;
   width: 960px;
+  border-bottom: 1px solid lightgray;
 }
 
 #logo {
@@ -122,26 +123,43 @@ hr {
 .name {
   font-weight: bold;
   font-size: 20px;
+  padding-bottom: 5px;
 }
 
 .category {
   font-size: 16px;
   font-style: italic;
+  padding-bottom: 5px;
 }
 
 .price {
-
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 .picture {
+  padding-bottom: 5px;
+}
 
+.picture img {
+  height: 200px;
 }
 
 .details {
 
 }
 
+.book_product {
+  width: 49%;
+  margin-right: 1%;
+  float: left;
+}
 
+#riverpics.book_product {
+  width: 50%;
+  margin-right: 0%;
+}
 .row {
   padding-top: 5px;
   margin-top: 5px;
