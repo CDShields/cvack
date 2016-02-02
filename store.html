@@ -108,23 +108,30 @@
 
       // $('#content').append($('<div id=book1>').html( $('<div class=name>').text(book1.name)))
 
+      add_to_page(dummies);
+      add_to_page(riverpics);
+      add_to_page(paddle);
+      add_to_page(dry_bag);
+      $('#paddle').hide();
+      $('#dry_bag').hide();
 
       function bookInit () {
-        $('#content').empty();
-        add_to_page(dummies);
-        add_to_page(riverpics);
+        $('#dummies').show();
+        $('#riverpics').show();
+        $('#paddle').hide();
+        $('#dry_bag').hide();
       }
       function accessInit () {
-        $('#content').empty();
-        add_to_page(paddle);
-        add_to_page(dry_bag);
+        $('#paddle').show();
+        $('#dry_bag').show();
+        $('#dummies').hide();
+        $('#riverpics').hide();
       }
       function showAll () {
-        $('#content').empty();
-        add_to_page(dummies);
-        add_to_page(riverpics);
-        add_to_page(paddle);
-        add_to_page(dry_bag);
+        $('#dummies').show();
+        $('#riverpics').show();
+        $('#paddle').show();
+        $('#dry_bag').show();
       }
       document.querySelector('#navBooks').addEventListener('click',bookInit);
       document.querySelector('#navAccessories').addEventListener('click',accessInit);
