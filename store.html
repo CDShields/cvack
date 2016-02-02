@@ -81,6 +81,7 @@
     <script src="store.js"></script>
     <script>
       var dummies = {
+        divname: "#dummies",
         name: "Kayaking for Dummies",
         category: "Category: How-To",
         price: 29.99,
@@ -88,6 +89,7 @@
         details: ["This comprehensive guide is a must-have for any newcomer to the world of kayaking.", "From choosing the right vessel to embarking on your first adventure - this book will cover it all."]
       };
       var riverpics = {
+        divname: "#riverpics",
         name: "Photographic Guide to Central Virginia's Waterways",
         category: "Category: Photography",
         price: 49.99,
@@ -95,6 +97,7 @@
         details: ["This book is a collection of beautiful photographs taken by various amateur and professional photographers around the Central Virginia area.", "Gives the reader a variety of perspectives on the area's waterways."]
       };
       var paddle = {
+        divname: "#paddle",
         name: "Kayak Paddle",
         category: "Category: Paddles",
         price: 149.99,
@@ -102,6 +105,7 @@
         details: ["The Paddly paddle from Acme offers beginning and recreational paddlers excellent value and performance.","A must have for your kayaking starter-kit."]
       };
       var dry_bag = {
+        divname: "#dry_bag",
         name: "Dry Bag",
         category: "Category: Gear Bags",
         price: 159.99,
@@ -109,29 +113,18 @@
         details: ["This 115-liter Acme dry pack keeps your gear secure and dry during all of your kayaking adventures.","Made from military grade materials for extra durability."]
       };
 
-      $('#dummies .name').text(dummies.name);
-      $('#dummies .category').text(dummies.category);
-      $('#dummies .price').text(dummies.price);
-      $('#dummies .picture').html('<img src="' + dummies.picture + '"/>');
-      $('#dummies .details').text(dummies.details);
+      function add_to_page (item) {
+        $(item.divname + ' .name').text(item.name);
+        $(item.divname + ' .category').text(item.category);
+        $(item.divname + ' .price').text(item.price);
+        $(item.divname + ' .picture').html('<img src="' + item.picture + '"/>');
+        $(item.divname + ' .details').text(item.details);
+      }
 
-      $('#riverpics .name').text(riverpics.name);
-      $('#riverpics .category').text(riverpics.category);
-      $('#riverpics .price').text(riverpics.price);
-      $('#riverpics .picture').html('<img src="' + riverpics.picture + '"/>');
-      $('#riverpics .details').text(riverpics.details);
-
-      $('#paddle .name').text(paddle.name);
-      $('#paddle .category').text(paddle.category);
-      $('#paddle .price').text(paddle.price);
-      $('#paddle .picture').html('<img src="' + paddle.picture + '"/>');
-      $('#paddle .details').text(paddle.details);
-
-      $('#dry_bag .name').text(dry_bag.name);
-      $('#dry_bag .category').text(dry_bag.category);
-      $('#dry_bag .price').text(dry_bag.price);
-      $('#dry_bag .picture').html('<img src="' + dry_bag.picture + '"/>');
-      $('#dry_bag .details').text(dry_bag.details);
+      add_to_page(dummies);
+      add_to_page(riverpics);
+      add_to_page(paddle);
+      add_to_page(dry_bag);
 
     </script>
 
