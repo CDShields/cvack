@@ -24,8 +24,8 @@
           <ul>
             <a href="index.html"><li>Home</li></a>
             <a href="index.html"><li>Blog</li></a>
-            <a href="store.html"><li>Books</li></a>
-            <a href="store2.html"><li>Accessories</li></a>
+            <li id="navBooks">Books</li>
+            <li id="navAccessories">Accessories</li>
           </ul>
         </div>
         </div>
@@ -108,10 +108,18 @@
       // $('#content').append($('<div id=book1>').html( $('<div class=name>').text(book1.name)))
 
 
-      add_to_page(dummies);
-      add_to_page(riverpics);
-      add_to_page(paddle);
-      add_to_page(dry_bag);
+      function bookInit () {
+        $('#content').empty();
+        add_to_page(dummies);
+        add_to_page(riverpics);
+      }
+      function accessInit () {
+        $('#content').empty();
+        add_to_page(paddle);
+        add_to_page(dry_bag);
+      }
+      document.querySelector('#navBooks').addEventListener('click',bookInit);
+      document.querySelector('#navAccessories').addEventListener('click',accessInit);
 
     </script>
 
