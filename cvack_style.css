@@ -48,7 +48,6 @@ hr {
 #content {
   margin-bottom: 80px;
   padding-bottom: 40px;
-  height: 600px;
 }
 
 #splash {
@@ -157,6 +156,7 @@ hr {
   width: 49%;
   margin-right: 1%;
   float: left;
+  padding-bottom: 20px;
 }
 
 #riverpics.book_product {

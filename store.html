@@ -38,44 +38,32 @@
       <!--CONTENT-->
       <div id="content">
         <div id="dummies" class="book_product">
-          <div class="name">Kayaking for Dummies</div>
-          <div class="category">Category: How-To</div>
-          <div class="price">Price: $29.99</div>
-          <div class="picture"><img src="dummies.gif"/></div>
-          <div class="details">
-            This comprehensive guide is a must-have for any newcomer to the
-              world of kayaking. From choosing the right vessel to embarking on
-              your first adventure - this book will cover it all.
-          </div>
+          <div class="name"></div>
+          <div class="category"></div>
+          <div class="price"></div>
+          <div class="picture"></div>
+          <div class="details"></div>
         </div>
         <div id="riverpics" class="book_product">
-          <div class="name">Photographic Guide to Central Virginia's Waterways</div>
-          <div class="category">Category: Photography</div>
-          <div class="price">Price: $49.99</div>
-          <div class="picture"><img src="waterways.gif"</div>
-          <div class="details">
-            This book is a collection of beautiful photographs taken by various amateur
-            and professional photographers around the Central Virginia area giving
-            the reader a variety of perspectives on the area's waterways.
-          </div>
+          <div class="name"></div>
+          <div class="category"></div>
+          <div class="price"></div>
+          <div class="picture"></div>
+          <div class="details"></div>
         </div>
         <div id="paddle" class="accessories">
-          <div class="name">Kayak Paddle</div>
-          <div class="category">Category: Paddles</div>
-          <div class="price">Price: $149.99</div>
-          <div class="picture"><img src="http://www.rei.com/media/product/781862?size=230"/></div>
-          <div class="details">
-            The Paddly paddle from Acme offers beginning and recreational paddlers excellent value and performance.
-          </div>
+          <div class="name"></div>
+          <div class="category"></div>
+          <div class="price"></div>
+          <div class="picture"></div>
+          <div class="details"></div>
         </div>
         <div id="dry_bag" class="accessories">
-          <div class="name">Dry Bag</div>
-          <div class="category">Category: Gear Bags</div>
-          <div class="price">Price: $159.99</div>
-          <div class="picture"><img src="http://www.rei.com/media/product/784169"</div>
-          <div class="details">
-            This 115-liter Acme dry pack keeps your gear secure and dry during all of your kayaking adventures.
-          </div>
+          <div class="name"></div>
+          <div class="category"></div>
+          <div class="price"></div>
+          <div class="picture"></div>
+          <div class="details"></div>
         </div>
 
       </div>
@@ -120,6 +108,31 @@
         picture: "http://www.rei.com/media/product/784169",
         details: ["This 115-liter Acme dry pack keeps your gear secure and dry during all of your kayaking adventures.","Made from military grade materials for extra durability."]
       };
+
+      $('#dummies .name').text(dummies.name);
+      $('#dummies .category').text(dummies.category);
+      $('#dummies .price').text(dummies.price);
+      $('#dummies .picture').html('<img src="' + dummies.picture + '"/>');
+      $('#dummies .details').text(dummies.details);
+
+      $('#riverpics .name').text(riverpics.name);
+      $('#riverpics .category').text(riverpics.category);
+      $('#riverpics .price').text(riverpics.price);
+      $('#riverpics .picture').html('<img src="' + riverpics.picture + '"/>');
+      $('#riverpics .details').text(riverpics.details);
+
+      $('#paddle .name').text(paddle.name);
+      $('#paddle .category').text(paddle.category);
+      $('#paddle .price').text(paddle.price);
+      $('#paddle .picture').html('<img src="' + paddle.picture + '"/>');
+      $('#paddle .details').text(paddle.details);
+
+      $('#dry_bag .name').text(dry_bag.name);
+      $('#dry_bag .category').text(dry_bag.category);
+      $('#dry_bag .price').text(dry_bag.price);
+      $('#dry_bag .picture').html('<img src="' + dry_bag.picture + '"/>');
+      $('#dry_bag .details').text(dry_bag.details);
+
     </script>
 
   </body>
