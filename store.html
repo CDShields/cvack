@@ -59,6 +59,25 @@
             the reader a variety of perspectives on the area's waterways.
           </div>
         </div>
+        <div id="paddle" class="accessories">
+          <div class="name">Kayak Paddle</div>
+          <div class="category">Category: Paddles</div>
+          <div class="price">Price: $149.99</div>
+          <div class="picture"><img src="http://www.rei.com/media/product/781862?size=230"/></div>
+          <div class="details">
+            The Paddly paddle from Acme offers beginning and recreational paddlers excellent value and performance.
+          </div>
+        </div>
+        <div id="dry_bag" class="accessories">
+          <div class="name">Dry Bag</div>
+          <div class="category">Category: Gear Bags</div>
+          <div class="price">Price: $159.99</div>
+          <div class="picture"><img src="http://www.rei.com/media/product/784169"</div>
+          <div class="details">
+            This 115-liter Acme dry pack keeps your gear secure and dry during all of your kayaking adventures.
+          </div>
+        </div>
+
       </div>
 
       <!--FOOTER--------------------------------------------------------------->
@@ -73,7 +92,34 @@
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="store.js"></script>
     <script>
-
+      var dummies = {
+        name: "Kayaking for Dummies",
+        category: "Category: How-To",
+        price: 29.99,
+        picture: "dummies.gif",
+        details: ["This comprehensive guide is a must-have for any newcomer to the world of kayaking.", "From choosing the right vessel to embarking on your first adventure - this book will cover it all."]
+      };
+      var riverpics = {
+        name: "Photographic Guide to Central Virginia's Waterways",
+        category: "Category: Photography",
+        price: 49.99,
+        picture: "waterways.gif",
+        details: ["This book is a collection of beautiful photographs taken by various amateur and professional photographers around the Central Virginia area.", "Gives the reader a variety of perspectives on the area's waterways."]
+      };
+      var paddle = {
+        name: "Kayak Paddle",
+        category: "Category: Paddles",
+        price: 149.99,
+        picture: "http://www.rei.com/media/product/781862?size=230",
+        details: ["The Paddly paddle from Acme offers beginning and recreational paddlers excellent value and performance.","A must have for your kayaking starter-kit."]
+      };
+      var dry_bag = {
+        name: "Dry Bag",
+        category: "Category: Gear Bags",
+        price: 159.99,
+        picture: "http://www.rei.com/media/product/784169",
+        details: ["This 115-liter Acme dry pack keeps your gear secure and dry during all of your kayaking adventures.","Made from military grade materials for extra durability."]
+      };
     </script>
 
   </body>
