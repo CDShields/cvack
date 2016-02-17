@@ -157,23 +157,19 @@ hr {
   margin-right: 1%;
   float: left;
   padding-bottom: 20px;
-}
+  height: 378px;
 
-#riverpics.book_product {
-  width: 50%;
-  margin-right: 0%;
 }
 
 .accessories {
   width: 49%;
   margin-right: 1%;
   float: left;
+  padding-bottom: 20px;
+  height: 378px;
 }
 
-#dry_bag.accessories {
-  width: 50%;
-  margin-right: 0%;
-}
+
 
 .row {
   padding-top: 5px;

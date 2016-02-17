@@ -51,7 +51,8 @@
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="store.js"></script>
     <script>
-      var books = [{
+      var products = {
+        books : [{
             divname: "dummies",
             divclass: "book_product",
             name: "Kayaking for Dummies",
@@ -67,8 +68,24 @@
             price: 49.99,
             picture: "waterways.gif",
             details: ["This book is a collection of beautiful photographs taken by various amateur and professional photographers around the Central Virginia area.", "Gives the reader a variety of perspectives on the area's waterways."]
-          }];
-      var accessories = [{
+          }, {
+            divname: "idiots",
+            divclass: "book_product",
+            name: "The Complete Idiots Guide to Canoeing and Kayaking",
+            category: "Category: How-To",
+            price: 19.99,
+            picture: "https://books.google.com/books/content/images/frontcover/le7AYQzSpo0C?fife=w300-rw",
+            details: ["Another great resource for beginners.", "This guide will navigate you through the waters."]
+          }, {
+            divname: "beginning",
+            divclass: "book_product",
+            name: "In the beginning...",
+            category: "How-To",
+            price: 35.99,
+            picture: "http://ecx.images-amazon.com/images/I/51dP2pKvaVL._SX369_BO1,204,203,200_.jpg",
+            details: ["Great book.","Buy it, please."]
+          }],
+        accessories : [{
             divname: "paddle",
             divclass: "accessories",
             name: "Kayak Paddle",
@@ -84,17 +101,22 @@
             price: 159.99,
             picture: "http://www.rei.com/media/product/784169",
             details: ["This 115-liter Acme dry pack keeps your gear secure and dry during all of your kayaking adventures.","Made from military grade materials for extra durability."]
-          }];
+          }]
+        };
 
       function add_to_page (item) {
 
         for (var i=0; i<item.length; i++) {
+            var detailsText = ""
+            for (j=0; j < item[i].details.length; j++) {
+              detailsText = detailsText + item[i].details[j] + " ";
+            }
             $('#content').append(
               $('<div id='+item[i].divname+' class='+item[i].divclass+'>').append( $('<div class=name>').text(item[i].name),
               $('<div class=category>').text(item[i].category),
               $('<div class=price>').text(item[i].price),
               $('<div class=picture>').html('<img src='+item[i].picture+'>'),
-              $('<div class=details>').text(item[i].details)));
+              $('<div class=details>').text(detailsText)));
         }
 
 
@@ -109,8 +131,8 @@
 
       // $('#content').append($('<div id=book1>').html( $('<div class=name>').text(book1.name)))
 
-      add_to_page(books);
-      add_to_page(accessories);
+      add_to_page(products["books"]);
+      add_to_page(products["accessories"]);
       $('.accessories').hide();
 
       function bookInit () {
