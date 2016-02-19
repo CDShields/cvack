@@ -68,12 +68,20 @@ hr {
 #logo {
   max-width: 200px;
 }
+#logoCont {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: inline-block;
+}
 #splash {
   max-width: 960px;
 }
 #nav {
   float: right;
   margin-top: 0px;
+  width: 464px;
 }
 #connect {
   float: right;
@@ -120,6 +128,15 @@ hr {
   padding: 0px;
   margin: 0 auto;
 }
+
+#middleNav {
+  width: 296px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  padding-top: 80px;
+}
+
 .storeIcon {
   padding: 20px;
   display: inline-block;
