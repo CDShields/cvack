@@ -23,7 +23,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 hr {
     height: 1px;
     color: black;
@@ -31,12 +30,10 @@ hr {
     border: 0px;
     margin-bottom: 40px;
 }
-
 #headerWrap {
   width: 960px;
   margin: 0 auto;
 }
-
 #contentWrap {
   width: 960px;
   margin: 0 auto;
@@ -44,12 +41,10 @@ hr {
   padding-top: 40px;
   margin-bottom: 40px;
 }
-
 #content {
   margin-bottom: 80px;
   padding-bottom: 40px;
 }
-
 #splash {
   background-image: url(kayak_pic_rv.jpg);
   width: 960px;
@@ -60,7 +55,6 @@ hr {
   color: white;
   font-size: 50px;
 }
-
 #header {
   position: fixed;
   top: 0;
@@ -71,15 +65,12 @@ hr {
   width: 960px;
   border-bottom: 1px solid lightgray;
 }
-
 #logo {
   max-width: 200px;
 }
-
 #splash {
   max-width: 960px;
 }
-
 #nav {
   float: right;
   margin-top: 0px;
@@ -109,7 +100,6 @@ hr {
 #nav li {
   display: inline;
 }
-
 #nav li {
   border: solid 2px red;
   color: red;
@@ -120,47 +110,54 @@ hr {
   margin-left: 10px;
   margin-right: 10px;
 }
-
+#storeInit {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+#storeIconCont {
+  width: 500px;
+  padding: 0px;
+  margin: 0 auto;
+}
+.storeIcon {
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
 .name {
   font-weight: bold;
   font-size: 20px;
   padding-bottom: 5px;
 }
-
 .category {
   font-size: 16px;
   font-style: italic;
   padding-bottom: 5px;
 }
-
 .price {
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-
 .picture {
   padding-bottom: 5px;
 }
-
 .picture img {
   height: 200px;
 }
-
 .details {
   font-size: 16px;
   padding-top: 14px;
 }
-
 .book_product {
   width: 49%;
   margin-right: 1%;
   float: left;
   padding-bottom: 20px;
   height: 378px;
-
 }
-
 .accessories {
   width: 49%;
   margin-right: 1%;
@@ -168,9 +165,6 @@ hr {
   padding-bottom: 20px;
   height: 378px;
 }
-
-
-
 .row {
   padding-top: 5px;
   margin-top: 5px;

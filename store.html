@@ -37,7 +37,21 @@
     <div id="contentWrap">
 
       <!--CONTENT-->
-      <div id="content"></div>
+      <div id="content">
+        <div id="storeInit">
+          <h1>Welcome to the CVACK Store!</h1>
+          <div id="storeIconCont">
+            <div class="storeIcon"  >
+              <h2>BOOKS</h2>
+              <img id="booksIcon" src="book1.gif"/>
+            </div>
+            <div class="storeIcon">
+              <h2>ACCESSORIES</h2>
+              <img id="accessIcon" src="access1.gif"/>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--FOOTER--------------------------------------------------------------->
       <div id="footer">
@@ -133,23 +147,42 @@
 
       add_to_page(products["books"]);
       add_to_page(products["accessories"]);
+      $('.book_product').hide();
       $('.accessories').hide();
 
       function bookInit () {
         $('.book_product').show();
         $('.accessories').hide();
+        $('#storeInit').hide();
       }
       function accessInit () {
         $('.accessories').show();
         $('.book_product').hide();
+        $('#storeInit').hide();
       }
       function showAll () {
         $('.accessories').show();
         $('.book_product').show();
       }
+      document.getElementById('booksIcon').style.cursor = "pointer";
+      document.getElementById('accessIcon').style.cursor = "pointer";
       document.querySelector('#navBooks').addEventListener('click',bookInit);
       document.querySelector('#navAccessories').addEventListener('click',accessInit);
       document.querySelector('#showAll').addEventListener('click',showAll);
+      document.querySelector('#booksIcon').addEventListener('click',bookInit);
+      document.querySelector('#accessIcon').addEventListener('click',accessInit);
+      document.querySelector('#booksIcon').addEventListener('mouseover', function () {
+        document.querySelector('#booksIcon').src = "book2.gif";
+      });
+      document.querySelector('#booksIcon').addEventListener('mouseout', function () {
+        document.querySelector('#booksIcon').src = "book1.gif";
+      });
+      document.querySelector('#accessIcon').addEventListener('mouseover',function(){
+        document.querySelector('#accessIcon').src = "access2.gif";
+      });
+      document.querySelector('#accessIcon').addEventListener('mouseout',function(){
+        document.querySelector('#accessIcon').src = "access1.gif";
+      });
 
     </script>
 
