@@ -46,7 +46,7 @@ hr {
   padding-bottom: 40px;
 }
 #splash {
-  background-image: url(kayak_pic_rv.jpg);
+  background-image: url(../images/kayak_pic_rv.jpg);
   width: 960px;
   height: 336px;
   display: table-cell;

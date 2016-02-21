@@ -5,7 +5,7 @@ var products = {
       name: "Kayaking for Dummies",
       category: "Category: How-To",
       price: 29.99,
-      picture: "dummies.gif",
+      picture: "./images/dummies.gif",
       details: ["This comprehensive guide is a must-have for any newcomer to the world of kayaking.", "From choosing the right vessel to embarking on your first adventure - this book will cover it all."]
     }, {
       divname: "riverpics",
@@ -13,7 +13,7 @@ var products = {
       name: "Photographic Guide to Central Virginia's Waterways",
       category: "Category: Photography",
       price: 49.99,
-      picture: "waterways.gif",
+      picture: "./images/waterways.gif",
       details: ["This book is a collection of beautiful photographs taken by various amateur and professional photographers around the Central Virginia area.", "Gives the reader a variety of perspectives on the area's waterways."]
     }, {
       divname: "idiots",
@@ -29,7 +29,7 @@ var products = {
       name: "In the beginning...",
       category: "How-To",
       price: 35.99,
-      picture: "in_the_beg.jpg",
+      picture: "./images/in_the_beg.jpg",
       details: ["Great book.","Buy it, please."]
     }],
   accessories : [{
@@ -38,7 +38,7 @@ var products = {
       name: "Kayak Paddle",
       category: "Category: Paddles",
       price: 149.99,
-      picture: "paddle.jpg",
+      picture: "./images/paddle.jpg",
       details: ["The Paddly paddle from Acme offers beginning and recreational paddlers excellent value and performance.","A must have for your kayaking starter-kit."]
     }, {
       divname: "dry_bag",
@@ -46,7 +46,7 @@ var products = {
       name: "Dry Bag",
       category: "Category: Gear Bags",
       price: 159.99,
-      picture: "backpack.jpg",
+      picture: "./images/backpack.jpg",
       details: ["This 115-liter Acme dry pack keeps your gear secure and dry during all of your kayaking adventures.","Made from military grade materials for extra durability."]
     }]
   };
@@ -104,16 +104,16 @@ document.getElementById('accessIcon').style.cursor = "pointer";
 document.querySelector('#booksIcon').addEventListener('click',bookInit);
 document.querySelector('#accessIcon').addEventListener('click',accessInit);
 document.querySelector('#booksIcon').addEventListener('mouseover', function () {
-  document.querySelector('#booksIcon').src = "book2.gif";
+  document.querySelector('#booksIcon').src = "./images/book2.gif";
 });
 document.querySelector('#booksIcon').addEventListener('mouseout', function () {
-  document.querySelector('#booksIcon').src = "book1.gif";
+  document.querySelector('#booksIcon').src = "./images/book1.gif";
 });
 document.querySelector('#accessIcon').addEventListener('mouseover',function(){
-  document.querySelector('#accessIcon').src = "access2.gif";
+  document.querySelector('#accessIcon').src = "./images/access2.gif";
 });
 document.querySelector('#accessIcon').addEventListener('mouseout',function(){
-  document.querySelector('#accessIcon').src = "access1.gif";
+  document.querySelector('#accessIcon').src = "./images/access1.gif";
 });
 
 $('.store_categories').change(function () {
